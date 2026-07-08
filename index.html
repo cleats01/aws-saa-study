@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
-<title>AWS SAA 기초 개념 핸드북 - iPhone 학습형</title>
+<title>AWS SAA 기초 개념 핸드북</title>
 <style>
 :root {
   --bg: #f7f8fb; --paper: #ffffff; --ink: #172033; --muted: #667085; --line: #e4e7ec;
@@ -112,7 +112,7 @@ main { padding:48px min(6vw, 72px); max-width:1100px; width:100%; }
   a { color:inherit; text-decoration:none; }
 }
 
-/* v4: iPhone 학습형 + 핵심 용어 강조 */
+/* v4: 학습형 + 핵심 용어 강조 */
 :root { --important:#f97316; --important-soft:#fff7ed; --important-line:#fed7aa; }
 .term-card.important { border-color: var(--important-line); box-shadow: 0 3px 12px rgba(249,115,22,.08); }
 .term-card.important .term-num { color:#c2410c; background:var(--important-soft); border-color:var(--important-line); }
@@ -211,7 +211,7 @@ button, a, label { touch-action: manipulation; }
 <aside>
 <button aria-expanded="true" class="toolbar-toggle" id="toolbarToggle" title="툴바 접기" type="button">← 툴바 접기</button>
 <h1>AWS SAA 기초 개념 핸드북</h1>
-<div class="meta">iPhone 학습형 HTML · 총 167개 용어 · 핵심 85개</div>
+<div class="meta">총 167개 용어 · 핵심 85개</div>
 <input autocomplete="off" class="search" id="search" placeholder="용어 검색: CloudFront, AZ, S3..."/>
 <div aria-label="학습 상태 관리" class="study-panel">
 <div class="progress-line"><span>학습 완료</span><span><strong id="knownCount">0</strong>/<span id="totalCount">0</span>개</span></div>
@@ -227,7 +227,7 @@ button, a, label { touch-action: manipulation; }
 <button id="importKnown" type="button">불러오기</button>
 </div>
 <input accept="application/json" hidden="" id="importFile" type="file"/>
-<div class="study-note">체크 상태는 이 브라우저의 localStorage에 저장됩니다. iPhone Chrome에서도 같은 URL/파일 기준으로 유지되며, 브라우저 데이터 삭제·시크릿 모드·다른 기기에서는 별도 관리됩니다.</div>
+<div class="study-note">체크 상태는 이 브라우저의 localStorage에 저장됩니다. 같은 URL 기준으로 유지되며, 브라우저 데이터 삭제·시크릿 모드·다른 기기에서는 별도 관리됩니다.</div>
 </div><div class="pwa-status" id="pwaStatus">PWA 상태: 로컬 HTML 모드. 정적 호스팅에서 열면 오프라인 캐시/홈 화면 설치를 사용할 수 있습니다.</div>
 <div class="result-meta" id="resultMeta"></div>
 <div class="side-section-title">분류</div>
@@ -410,7 +410,7 @@ button, a, label { touch-action: manipulation; }
 <div><strong>내부 링크</strong><br/>설명/예시/시험 포인트 안의 관련 용어를 클릭하면 해당 섹션으로 이동합니다.</div>
 <div><strong>체크/필터</strong><br/>아는 용어, 모르는 용어, 핵심 용어만 필터링할 수 있습니다.</div>
 <div><strong>심화 질문</strong><br/>각 용어의 질문 프롬프트를 복사하거나 ChatGPT를 새 탭으로 열 수 있습니다.</div>
-<div><strong>iPhone/PWA</strong><br/>모바일 우선 레이아웃이며, 정적 호스팅 시 홈 화면 앱처럼 사용할 수 있습니다.</div></div>
+<div><strong>모바일/PWA</strong><br/>모바일 우선 레이아웃이며, 정적 호스팅 시 홈 화면 앱처럼 사용할 수 있습니다.</div></div>
 </section>
 <section class="category" id="sec-01"><h2>1. 클라우드/아키텍처 기본</h2>
 <article class="term-card important" data-important="true" data-term="aws region" id="term-01-01">
@@ -1863,7 +1863,7 @@ applyState();
   const standalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
   const hosted = location.protocol === 'https:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1';
   if (standalone) el.textContent = 'PWA 상태: 홈 화면 앱 모드로 실행 중입니다. 체크/필터 상태는 이 브라우저 저장소에 유지됩니다.';
-  else if (hosted) el.textContent = 'PWA 상태: 정적 호스팅 모드입니다. iPhone Chrome 공유 버튼에서 홈 화면에 추가할 수 있습니다.';
+  else if (hosted) el.textContent = 'PWA 상태: 정적 호스팅 모드입니다. 브라우저 공유 메뉴에서 홈 화면에 추가할 수 있습니다.';
   else el.textContent = 'PWA 상태: 로컬 HTML 모드입니다. 체크/필터는 가능하지만, 완전한 홈 화면 앱/오프라인 캐시는 정적 호스팅에서 가장 안정적입니다.';
 })();
 
