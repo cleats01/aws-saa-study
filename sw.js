@@ -1,4 +1,4 @@
-const CACHE_NAME = 'aws-saa-handbook-v1';
+const CACHE_NAME = 'aws-saa-handbook-v2';
 const ASSETS = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './icon-512-maskable.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));

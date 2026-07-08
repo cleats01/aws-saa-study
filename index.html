@@ -131,11 +131,11 @@ button, a, label { touch-action: manipulation; }
 @media (max-width: 920px) {
   body { -webkit-text-size-adjust: 100%; background:#f8fafc; }
   .layout { grid-template-columns:1fr; }
-  aside { position:sticky; top:0; z-index:30; height:auto; max-height:78vh; padding:12px 12px calc(12px + env(safe-area-inset-top)); border-bottom:1px solid rgba(255,255,255,.12); box-shadow:0 8px 24px rgba(15,23,42,.18); }
+  aside { position:sticky; top:0; z-index:30; height:auto; max-height:78vh; padding:calc(12px + env(safe-area-inset-top)) 12px 12px; border-bottom:1px solid rgba(255,255,255,.12); box-shadow:0 8px 24px rgba(15,23,42,.18); }
   aside h1 { font-size:18px; }
   .toolbar-toggle { min-height:42px; margin-bottom:10px; }
   .layout.toolbar-collapsed { grid-template-columns:1fr; }
-  .layout.toolbar-collapsed aside { height:58px; max-height:58px; padding:8px 12px; overflow:hidden; display:flex; align-items:center; }
+  .layout.toolbar-collapsed aside { height:calc(58px + env(safe-area-inset-top)); max-height:calc(58px + env(safe-area-inset-top)); padding:calc(8px + env(safe-area-inset-top)) 12px 8px; overflow:hidden; display:flex; align-items:center; }
   .layout.toolbar-collapsed aside > :not(.toolbar-toggle) { display:none !important; }
   .layout.toolbar-collapsed .toolbar-toggle { width:44px; height:44px; min-width:44px; max-width:44px; min-height:44px; padding:0; margin:0; display:flex; align-items:center; justify-content:center; }
   .search { font-size:16px; min-height:44px; }
