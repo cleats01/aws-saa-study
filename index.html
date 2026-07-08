@@ -1785,21 +1785,6 @@ document.querySelectorAll('.prompt-link').forEach(btn => {
   });
 });
 
-document.querySelectorAll('.chatgpt-link').forEach(btn => {
-  btn.addEventListener('click', async () => {
-    const card = document.getElementById(btn.dataset.target);
-    if (!card) return;
-    const prompt = buildPrompt(card);
-    try {
-      await copyText(prompt);
-      setTemporaryText(btn, '복사됨', '복사+ChatGPT');
-      window.open('https://chatgpt.com/', '_blank', 'noopener');
-    } catch(e) {
-      alert('클립보드 복사에 실패했습니다. 브라우저 권한을 확인해주세요.');
-    }
-  });
-});
-
 // 필터 때문에 대상 용어가 숨겨져 있으면 자동으로 전체 보기로 바꾼 뒤 이동한다.
 document.addEventListener('click', event => {
   const a = event.target.closest('a[href^="#term-"]');
