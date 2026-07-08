@@ -174,7 +174,7 @@ button, a, label { touch-action: manipulation; }
 
 @media (max-width: 920px) {
   /* 카드 외형 정돈 */
-  .term-card { padding:18px 15px 16px; border-radius:16px; margin:12px 0; box-shadow:0 1px 3px rgba(16,24,40,.06); scroll-margin-top:78px; }
+  .term-card { padding:18px 15px 16px; border-radius:16px; margin:12px 0; box-shadow:0 1px 3px rgba(16,24,40,.06); scroll-margin-top:calc(70px + env(safe-area-inset-top)); }
 
   /* 헤더: 제목 줄 (번호 · 제목 · 핵심 배지) */
   .term-head { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin-bottom:0; }
@@ -1785,22 +1785,39 @@ document.querySelectorAll('.prompt-link').forEach(btn => {
   });
 });
 
-// 필터 때문에 대상 용어가 숨겨져 있으면 자동으로 전체 보기로 바꾼 뒤 이동한다.
+// 용어 링크 이동 처리:
+//  - 필터로 숨겨진 대상이면 전체 보기로 전환
+//  - 모바일에서 툴바가 펼쳐져 있으면 접어서 sticky 헤더가 제목을 가리지 않게 함
+//  레이아웃이 바뀐 경우에만 직접 스크롤하고, 그 외에는 네이티브 앵커 이동(scroll-margin-top 반영)에 맡긴다.
 document.addEventListener('click', event => {
   const a = event.target.closest('a[href^="#term-"]');
   if (!a) return;
   const target = document.querySelector(a.getAttribute('href'));
   if (!target) return;
+
+  let needsManualScroll = false;
+
   if (target.classList.contains('hidden-by-filter')) {
-    event.preventDefault();
     search.value = '';
     activeFilter = 'all';
     localStorage.setItem(FILTER_KEY, activeFilter);
     applyState();
-    setTimeout(() => {
+    needsManualScroll = true;
+  }
+
+  if (window.matchMedia('(max-width: 920px)').matches && !toolbarCollapsed) {
+    toolbarCollapsed = true;
+    localStorage.setItem(TOOLBAR_KEY, String(toolbarCollapsed));
+    applyToolbarState();
+    needsManualScroll = true;
+  }
+
+  if (needsManualScroll) {
+    event.preventDefault();
+    requestAnimationFrame(() => {
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       history.pushState(null, '', a.getAttribute('href'));
-    }, 0);
+    });
   }
 });
 

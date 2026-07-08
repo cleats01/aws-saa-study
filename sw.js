@@ -1,4 +1,4 @@
-const CACHE_NAME = 'aws-saa-handbook-v7';
+const CACHE_NAME = 'aws-saa-handbook-v8';
 const ASSETS = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './icon-512-maskable.png'];
 
 self.addEventListener('install', event => {
