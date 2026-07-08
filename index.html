@@ -490,14 +490,14 @@ button, a, label { touch-action: manipulation; }
 <div class="related"><span>관련 용어</span><a class="chip" href="#term-01-06">High Availability</a></div>
 </article>
 <article class="term-card" data-term="rto" id="term-01-12">
-<div class="term-head"><span class="term-num">1.12</span><h3>RTO</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-01-12" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-01-12" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-01-12" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">1.12</span><h3>Recovery Time Objective, RTO</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-01-12" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-01-12" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-01-12" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span>Recovery Time Objective. 장애 후 서비스를 복구하는 데 허용되는 최대 시간.</span></p>
 <p><strong>활용 예시</strong><span>RTO 10분이면 10분 안에 서비스를 다시 사용할 수 있어야 한다.</span></p>
 <p><strong>시험 포인트</strong><span><a class="xref" href="#term-01-14" title="Disaster Recovery, DR로 이동">DR</a> 전략 선택 문제에서 <a class="xref" href="#term-01-13" title="RPO로 이동">RPO</a>와 같이 나온다.</span></p>
 <div class="related"><span>관련 용어</span><a class="chip" href="#term-01-14">Disaster Recovery, DR</a><a class="chip" href="#term-01-13">RPO</a></div>
 </article>
 <article class="term-card" data-term="rpo" id="term-01-13">
-<div class="term-head"><span class="term-num">1.13</span><h3>RPO</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-01-13" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-01-13" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-01-13" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">1.13</span><h3>Recovery Point Objective, RPO</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-01-13" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-01-13" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-01-13" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span>Recovery Point Objective. 장애 시점 기준으로 잃어도 되는 데이터의 최대 시간 범위.</span></p>
 <p><strong>활용 예시</strong><span>RPO 5분이면 최근 5분 이내 데이터 손실까지만 허용한다는 뜻이다.</span></p>
 <p><strong>시험 포인트</strong><span>백업 주기, 복제 방식, <a class="xref" href="#term-06-04" title="RDS Multi-AZ로 이동">Multi-AZ</a>/리전 복제와 연결된다.</span></p>
@@ -526,7 +526,7 @@ button, a, label { touch-action: manipulation; }
 </section>
 <section class="category" id="sec-02"><h2>2. 보안/IAM</h2>
 <article class="term-card important" data-important="true" data-term="iam" id="term-02-01">
-<div class="term-head"><span class="term-num">2.1</span><h3>IAM</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-02-01" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-02-01" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-02-01" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">2.1</span><h3>Identity and Access Management, IAM</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-02-01" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-02-01" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-02-01" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span>AWS의 사용자, 역할, 권한을 관리하는 서비스.</span></p>
 <div class="examples"><strong>활용 예시</strong><ol><li><span>개발자에게 필요한 <a class="xref" href="#term-05-01" title="S3로 이동">S3</a> 읽기 권한만 주고, 전체 관리자 권한은 부여하지 않는다.</span></li><li><span><a class="xref" href="#term-04-01" title="EC2로 이동">EC2</a>나 <a class="xref" href="#term-04-11" title="Lambda로 이동">Lambda</a>가 <a class="xref" href="#term-05-01" title="S3로 이동">S3</a>에 접근할 때 액세스 키 대신 <a class="xref" href="#term-02-04" title="IAM Role로 이동">IAM Role</a>을 사용한다.</span></li><li><span>운영 계정에는 <a class="xref" href="#term-02-10" title="MFA로 이동">MFA</a>를 적용하고, 권한은 최소 권한 원칙으로 제한한다.</span></li></ol></div>
 <p><strong>시험 포인트</strong><span><a class="xref" href="#term-02-09" title="Least Privilege로 이동">최소 권한</a> 원칙이 핵심이다.</span></p>
@@ -587,20 +587,20 @@ button, a, label { touch-action: manipulation; }
 <div class="related"><span>관련 용어</span><a class="chip" href="#term-03-21">CloudFront</a></div>
 </article>
 <article class="term-card" data-term="mfa" id="term-02-10">
-<div class="term-head"><span class="term-num">2.10</span><h3>MFA</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-02-10" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-02-10" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-02-10" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">2.10</span><h3>Multi-Factor Authentication, MFA</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-02-10" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-02-10" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-02-10" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span>비밀번호 외에 추가 인증 수단을 요구하는 보안 장치.</span></p>
 <p><strong>활용 예시</strong><span>Root User와 관리자 계정에 MFA를 활성화한다.</span></p>
 <p><strong>시험 포인트</strong><span>민감한 계정 보호의 기본 조치로 자주 나온다.</span></p>
 </article>
 <article class="term-card" data-term="sts" id="term-02-11">
-<div class="term-head"><span class="term-num">2.11</span><h3>STS</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-02-11" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-02-11" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-02-11" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">2.11</span><h3>Security Token Service, STS</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-02-11" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-02-11" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-02-11" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span>Security Token Service. 임시 보안 자격 증명을 발급하는 서비스.</span></p>
 <p><strong>활용 예시</strong><span>외부 사용자가 특정 Role을 AssumeRole하여 임시로 <a class="xref" href="#term-05-01" title="S3로 이동">S3</a>에 접근한다.</span></p>
 <p><strong>시험 포인트</strong><span>장기 Access Key 대신 임시 권한을 줄 때 사용한다.</span></p>
 <div class="related"><span>관련 용어</span><a class="chip" href="#term-05-01">S3</a></div>
 </article>
 <article class="term-card important" data-important="true" data-term="kms" id="term-02-12">
-<div class="term-head"><span class="term-num">2.12</span><h3>KMS</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-02-12" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-02-12" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-02-12" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">2.12</span><h3>Key Management Service, KMS</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-02-12" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-02-12" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-02-12" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span>암호화 키를 생성하고 관리하는 서비스.</span></p>
 <div class="examples"><strong>활용 예시</strong><ol><li><span><a class="xref" href="#term-05-01" title="S3로 이동">S3</a> 객체를 SSE-KMS로 암호화해 키 사용 권한까지 제어한다.</span></li><li><span><a class="xref" href="#term-06-01" title="RDS로 이동">RDS</a> 스토리지 암호화에 KMS 키를 사용해 DB 데이터 보호를 강화한다.</span></li><li><span>민감한 로그나 백업을 암호화할 때 고객 관리형 KMS 키로 감사와 권한 관리를 세밀하게 한다.</span></li></ol></div>
 <p><strong>시험 포인트</strong><span>SSE-KMS, 키 정책, 권한 분리가 자주 나온다.</span></p>
@@ -627,14 +627,14 @@ button, a, label { touch-action: manipulation; }
 <p><strong>시험 포인트</strong><span>User Pool과 Identity Pool의 목적을 구분한다.</span></p>
 </article>
 <article class="term-card important" data-important="true" data-term="acm" id="term-02-16">
-<div class="term-head"><span class="term-num">2.16</span><h3>ACM</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-02-16" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-02-16" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-02-16" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">2.16</span><h3>AWS Certificate Manager, ACM</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-02-16" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-02-16" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-02-16" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span>SSL/TLS 인증서를 발급하고 관리하는 서비스.</span></p>
 <div class="examples"><strong>활용 예시</strong><ol><li><span><a class="xref" href="#term-03-21" title="CloudFront로 이동">CloudFront</a> 배포에 HTTPS를 적용하기 위해 인증서를 발급한다.</span></li><li><span><a class="xref" href="#term-04-08" title="ALB로 이동">ALB</a>에 TLS 인증서를 연결해 API 서버를 HTTPS로 제공한다.</span></li><li><span><a class="xref" href="#term-03-21" title="CloudFront로 이동">CloudFront</a>용 ACM 인증서는 us-east-1 리전에 발급해야 하는 점을 주의한다.</span></li></ol></div>
 <p><strong>시험 포인트</strong><span><a class="xref" href="#term-03-21" title="CloudFront로 이동">CloudFront</a>용 인증서는 us-east-1 리전 요구가 자주 언급된다.</span></p>
 <div class="related"><span>관련 용어</span><a class="chip" href="#term-03-21">CloudFront</a><a class="chip" href="#term-04-08">Application Load Balancer, ALB</a></div>
 </article>
 <article class="term-card important" data-important="true" data-term="aws waf" id="term-02-17">
-<div class="term-head"><span class="term-num">2.17</span><h3>AWS WAF</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-02-17" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-02-17" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-02-17" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">2.17</span><h3>AWS WAF (Web Application Firewall)</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-02-17" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-02-17" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-02-17" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span>웹 요청을 필터링하는 웹 애플리케이션 방화벽.</span></p>
 <div class="examples"><strong>활용 예시</strong><ol><li><span><a class="xref" href="#term-03-21" title="CloudFront로 이동">CloudFront</a> 앞단에서 SQL Injection이나 XSS 패턴 요청을 차단한다.</span></li><li><span>특정 IP 대역이나 국가에서 오는 요청을 제한한다.</span></li><li><span><a class="xref" href="#term-07-01" title="API Gateway로 이동">API Gateway</a>나 <a class="xref" href="#term-04-08" title="ALB로 이동">ALB</a> 앞에 붙여 과도하거나 악성인 웹 요청을 필터링한다.</span></li></ol></div>
 <p><strong>시험 포인트</strong><span><a class="xref" href="#term-03-09" title="Security Group로 이동">Security Group</a>과 달리 HTTP 레벨 규칙을 다룬다.</span></p>
@@ -677,14 +677,14 @@ button, a, label { touch-action: manipulation; }
 </section>
 <section class="category" id="sec-03"><h2>3. 네트워크/CDN/DNS</h2>
 <article class="term-card important" data-important="true" data-term="vpc" id="term-03-01">
-<div class="term-head"><span class="term-num">3.1</span><h3>VPC</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-03-01" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-03-01" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-03-01" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">3.1</span><h3>Virtual Private Cloud, VPC</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-03-01" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-03-01" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-03-01" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span>AWS 안에 만드는 논리적 사설 네트워크.</span></p>
 <div class="examples"><strong>활용 예시</strong><ol><li><span><a class="xref" href="#term-04-01" title="EC2로 이동">EC2</a>, <a class="xref" href="#term-06-01" title="RDS로 이동">RDS</a>, <a class="xref" href="#term-04-08" title="ALB로 이동">ALB</a> 같은 리소스를 격리된 네트워크 안에 배치한다.</span></li><li><span><a class="xref" href="#term-03-04" title="Public Subnet로 이동">Public Subnet</a>에는 <a class="xref" href="#term-04-08" title="ALB로 이동">ALB</a>나 Bastion을, <a class="xref" href="#term-03-05" title="Private Subnet로 이동">Private Subnet</a>에는 애플리케이션 서버와 DB를 배치한다.</span></li><li><span>CIDR, <a class="xref" href="#term-03-03" title="Subnet로 이동">Subnet</a>, <a class="xref" href="#term-03-06" title="Route Table로 이동">Route Table</a>, <a class="xref" href="#term-03-07" title="Internet Gateway로 이동">Internet Gateway</a>, <a class="xref" href="#term-03-08" title="NAT Gateway로 이동">NAT Gateway</a>가 함께 나오는 네트워크 기본 단위다.</span></li></ol></div>
 <p><strong>시험 포인트</strong><span>Subnet, <a class="xref" href="#term-03-06" title="Route Table로 이동">Route Table</a>, Gateway, <a class="xref" href="#term-03-09" title="Security Group로 이동">Security Group</a>의 상위 개념이다.</span></p>
 <div class="related"><span>관련 용어</span><a class="chip" href="#term-03-06">Route Table</a><a class="chip" href="#term-03-09">Security Group</a></div>
 </article>
 <article class="term-card" data-term="cidr block" id="term-03-02">
-<div class="term-head"><span class="term-num">3.2</span><h3>CIDR Block</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-03-02" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-03-02" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-03-02" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">3.2</span><h3>CIDR Block (Classless Inter-Domain Routing)</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-03-02" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-03-02" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-03-02" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span>네트워크 주소 범위를 표현하는 방식.</span></p>
 <p><strong>활용 예시</strong><span>10.0.0.0/16 <a class="xref" href="#term-03-01" title="VPC로 이동">VPC</a> 안에 10.0.1.0/24 서브넷을 만든다.</span></p>
 <p><strong>시험 포인트</strong><span>IP 범위가 겹치면 <a class="xref" href="#term-03-15" title="VPC Peering로 이동">VPC Peering</a>이나 네트워크 연결에 문제가 생긴다.</span></p>
@@ -726,7 +726,7 @@ button, a, label { touch-action: manipulation; }
 <div class="related"><span>관련 용어</span><a class="chip" href="#term-03-01">VPC</a><a class="chip" href="#term-03-04">Public Subnet</a><a class="chip" href="#term-04-08">Application Load Balancer, ALB</a><a class="chip" href="#term-03-06">Route Table</a></div>
 </article>
 <article class="term-card important" data-important="true" data-term="nat gateway" id="term-03-08">
-<div class="term-head"><span class="term-num">3.8</span><h3>NAT Gateway</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-03-08" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-03-08" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-03-08" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">3.8</span><h3>NAT Gateway (Network Address Translation)</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-03-08" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-03-08" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-03-08" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span><a class="xref" href="#term-03-05" title="Private Subnet로 이동">Private Subnet</a> 리소스가 인터넷으로 나갈 수 있게 하는 서비스.</span></p>
 <div class="examples"><strong>활용 예시</strong><ol><li><span><a class="xref" href="#term-03-05" title="Private Subnet로 이동">Private Subnet</a>의 <a class="xref" href="#term-04-01" title="EC2로 이동">EC2</a>가 소프트웨어 업데이트를 받으려고 인터넷으로 나갈 때 사용한다.</span></li><li><span>외부에서 <a class="xref" href="#term-03-05" title="Private Subnet로 이동">Private Subnet</a>으로 직접 들어오는 연결은 허용하지 않는다.</span></li><li><span>가용성을 높이려면 <a class="xref" href="#term-01-02" title="AZ로 이동">AZ</a>별 NAT Gateway를 두지만 비용이 늘어난다.</span></li></ol></div>
 <p><strong>시험 포인트</strong><span>들어오는 공개 접근용이 아니라 나가는 통신용이다. 비용도 자주 고려된다.</span></p>
@@ -740,7 +740,7 @@ button, a, label { touch-action: manipulation; }
 <div class="related"><span>관련 용어</span><a class="chip" href="#term-04-01">EC2</a><a class="chip" href="#term-04-08">Application Load Balancer, ALB</a><a class="chip" href="#term-06-01">RDS</a><a class="chip" href="#term-01-16">Stateful Application</a><a class="chip" href="#term-02-08">Explicit Deny</a></div>
 </article>
 <article class="term-card important" data-important="true" data-term="nacl" id="term-03-10">
-<div class="term-head"><span class="term-num">3.10</span><h3>NACL</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-03-10" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-03-10" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-03-10" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">3.10</span><h3>Network Access Control List, NACL</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-03-10" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-03-10" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-03-10" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span>서브넷 단위의 상태 비저장 방화벽.</span></p>
 <div class="examples"><strong>활용 예시</strong><ol><li><span>서브넷 단위로 들어오고 나가는 트래픽을 stateless 방식으로 제어한다.</span></li><li><span>특정 IP 대역을 서브넷 수준에서 차단하는 보조 방화벽으로 사용할 수 있다.</span></li><li><span>인바운드와 아웃바운드 규칙을 모두 고려해야 하며 <a class="xref" href="#term-03-09" title="Security Group로 이동">Security Group</a>보다 낮은 네트워크 계층에서 동작한다.</span></li></ol></div>
 <p><strong>시험 포인트</strong><span><a class="xref" href="#term-01-15" title="Stateless Application로 이동">Stateless</a>라서 인바운드/아웃바운드 규칙을 모두 고려해야 한다.</span></p>
@@ -803,7 +803,7 @@ button, a, label { touch-action: manipulation; }
 <div class="related"><span>관련 용어</span><a class="chip" href="#term-04-08">Application Load Balancer, ALB</a></div>
 </article>
 <article class="term-card" data-term="cname record" id="term-03-19">
-<div class="term-head"><span class="term-num">3.19</span><h3>CNAME Record</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-03-19" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-03-19" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-03-19" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">3.19</span><h3>CNAME Record (Canonical Name)</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-03-19" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-03-19" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-03-19" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span>도메인을 다른 도메인 이름으로 연결하는 DNS 레코드.</span></p>
 <p><strong>활용 예시</strong><span>www.example.com을 dxxxx.cloudfront.net으로 연결한다.</span></p>
 <p><strong>시험 포인트</strong><span>루트 도메인에는 일반 CNAME을 쓰기 어렵고 Alias를 고려한다.</span></p>
@@ -843,7 +843,7 @@ button, a, label { touch-action: manipulation; }
 <div class="related"><span>관련 용어</span><a class="chip" href="#term-03-21">CloudFront</a></div>
 </article>
 <article class="term-card important" data-important="true" data-term="oac/oai" id="term-03-25">
-<div class="term-head"><span class="term-num">3.25</span><h3>OAC/OAI</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-03-25" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-03-25" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-03-25" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">3.25</span><h3>OAC/OAI (Origin Access Control / Origin Access Identity)</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-03-25" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-03-25" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-03-25" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span><a class="xref" href="#term-03-21" title="CloudFront로 이동">CloudFront</a>만 <a class="xref" href="#term-05-01" title="S3로 이동">S3</a> Origin에 접근하도록 제한하는 방식. OAC가 더 최신 방식이다.</span></p>
 <div class="examples"><strong>활용 예시</strong><ol><li><span><a class="xref" href="#term-05-01" title="S3로 이동">S3</a> 버킷을 public으로 열지 않고 <a class="xref" href="#term-03-21" title="CloudFront로 이동">CloudFront</a>를 통해서만 읽을 수 있게 한다.</span></li><li><span>OAI보다 최신 방식인 OAC를 사용해 <a class="xref" href="#term-05-01" title="S3로 이동">S3</a> 오리진 접근을 제어한다.</span></li><li><span><a class="xref" href="#term-05-13" title="Bucket Policy로 이동">Bucket Policy</a>에서 <a class="xref" href="#term-03-21" title="CloudFront로 이동">CloudFront</a> 배포만 객체를 읽도록 허용한다.</span></li></ol></div>
 <p><strong>시험 포인트</strong><span><a class="xref" href="#term-05-01" title="S3로 이동">S3</a>를 public으로 열지 않는 안전한 정적 콘텐츠 제공 구조다.</span></p>
@@ -880,14 +880,14 @@ button, a, label { touch-action: manipulation; }
 </section>
 <section class="category" id="sec-04"><h2>4. 컴퓨팅/컨테이너</h2>
 <article class="term-card important" data-important="true" data-term="ec2" id="term-04-01">
-<div class="term-head"><span class="term-num">4.1</span><h3>EC2</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-04-01" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-04-01" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-04-01" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">4.1</span><h3>Elastic Compute Cloud, EC2</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-04-01" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-04-01" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-04-01" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span>AWS에서 빌려 쓰는 가상 서버.</span></p>
 <div class="examples"><strong>활용 예시</strong><ol><li><span>직접 서버를 띄워 웹 애플리케이션, 백엔드 API, Worker를 실행한다.</span></li><li><span>OS 패치, 런타임 설치, 보안 설정 등 관리 책임이 서버리스보다 크다.</span></li><li><span><a class="xref" href="#term-04-05" title="Auto Scaling로 이동">Auto Scaling</a>, <a class="xref" href="#term-04-07" title="ELB로 이동">ELB</a>, <a class="xref" href="#term-03-09" title="Security Group로 이동">Security Group</a>, <a class="xref" href="#term-05-17" title="EBS로 이동">EBS</a>와 함께 사용되는 기본 컴퓨팅 서비스다.</span></li></ol></div>
 <p><strong>시험 포인트</strong><span>인스턴스 타입, <a class="xref" href="#term-04-02" title="AMI로 이동">AMI</a>, <a class="xref" href="#term-03-09" title="Security Group로 이동">보안 그룹</a>, <a class="xref" href="#term-04-05" title="EC2 Auto Scaling로 이동">Auto Scaling</a>과 함께 나온다.</span></p>
 <div class="related"><span>관련 용어</span><a class="chip" href="#term-04-02">AMI</a><a class="chip" href="#term-03-09">Security Group</a><a class="chip" href="#term-04-05">EC2 Auto Scaling</a></div>
 </article>
 <article class="term-card" data-term="ami" id="term-04-02">
-<div class="term-head"><span class="term-num">4.2</span><h3>AMI</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-04-02" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-04-02" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-04-02" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">4.2</span><h3>Amazon Machine Image, AMI</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-04-02" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-04-02" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-04-02" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span><a class="xref" href="#term-04-01" title="EC2로 이동">EC2</a> 인스턴스를 만들기 위한 서버 이미지.</span></p>
 <p><strong>활용 예시</strong><span>기본 패키지와 설정을 포함한 AMI로 동일한 서버를 반복 생성한다.</span></p>
 <p><strong>시험 포인트</strong><span>백업/복제/<a class="xref" href="#term-04-05" title="EC2 Auto Scaling로 이동">Auto Scaling</a> 시작 템플릿과 연결된다.</span></p>
@@ -962,14 +962,14 @@ button, a, label { touch-action: manipulation; }
 <div class="related"><span>관련 용어</span><a class="chip" href="#term-04-11">Lambda</a></div>
 </article>
 <article class="term-card" data-term="ecs" id="term-04-13">
-<div class="term-head"><span class="term-num">4.13</span><h3>ECS</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-04-13" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-04-13" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-04-13" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">4.13</span><h3>Elastic Container Service, ECS</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-04-13" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-04-13" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-04-13" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span>AWS의 컨테이너 오케스트레이션 서비스.</span></p>
 <p><strong>활용 예시</strong><span>Docker 컨테이너로 만든 API 서버를 ECS Service로 운영한다.</span></p>
 <p><strong>시험 포인트</strong><span><a class="xref" href="#term-04-14" title="EKS로 이동">EKS</a>보다 AWS 관리형 컨테이너 운영에 단순한 편이다.</span></p>
 <div class="related"><span>관련 용어</span><a class="chip" href="#term-04-14">EKS</a></div>
 </article>
 <article class="term-card" data-term="eks" id="term-04-14">
-<div class="term-head"><span class="term-num">4.14</span><h3>EKS</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-04-14" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-04-14" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-04-14" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">4.14</span><h3>Elastic Kubernetes Service, EKS</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-04-14" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-04-14" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-04-14" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span>AWS에서 Kubernetes를 운영하는 관리형 서비스.</span></p>
 <p><strong>활용 예시</strong><span>Kubernetes 기반으로 여러 마이크로서비스를 운영한다.</span></p>
 <p><strong>시험 포인트</strong><span>Kubernetes 생태계가 필요할 때 적합하지만 운영 복잡도가 있다.</span></p>
@@ -982,7 +982,7 @@ button, a, label { touch-action: manipulation; }
 <div class="related"><span>관련 용어</span><a class="chip" href="#term-04-13">ECS</a><a class="chip" href="#term-04-01">EC2</a></div>
 </article>
 <article class="term-card" data-term="ecr" id="term-04-16">
-<div class="term-head"><span class="term-num">4.16</span><h3>ECR</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-04-16" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-04-16" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-04-16" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">4.16</span><h3>Elastic Container Registry, ECR</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-04-16" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-04-16" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-04-16" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span>Docker 컨테이너 이미지를 저장하는 AWS 레지스트리.</span></p>
 <p><strong>활용 예시</strong><span>GitHub Actions에서 빌드한 이미지를 ECR에 push하고 <a class="xref" href="#term-04-13" title="ECS로 이동">ECS</a>에서 사용한다.</span></p>
 <p><strong>시험 포인트</strong><span><a class="xref" href="#term-04-13" title="ECS로 이동">ECS</a>/<a class="xref" href="#term-04-14" title="EKS로 이동">EKS</a> 배포 흐름과 함께 나온다.</span></p>
@@ -1012,7 +1012,7 @@ button, a, label { touch-action: manipulation; }
 </section>
 <section class="category" id="sec-05"><h2>5. 스토리지/파일 제공</h2>
 <article class="term-card important" data-important="true" data-term="s3" id="term-05-01">
-<div class="term-head"><span class="term-num">5.1</span><h3>S3</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-05-01" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-05-01" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-05-01" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">5.1</span><h3>Simple Storage Service, S3</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-05-01" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-05-01" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-05-01" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span>객체 스토리지 서비스. 파일을 객체 단위로 저장한다.</span></p>
 <div class="examples"><strong>활용 예시</strong><ol><li><span>이미지, PDF, 정적 파일, 로그, 백업 파일을 객체 형태로 저장한다.</span></li><li><span>프론트엔드 정적 자산은 S3에 저장하고 <a class="xref" href="#term-03-21" title="CloudFront로 이동">CloudFront</a>로 빠르게 제공할 수 있다.</span></li><li><span>수명주기 정책으로 오래된 파일을 저렴한 스토리지 클래스로 이동한다.</span></li></ol></div>
 <p><strong>시험 포인트</strong><span>거의 모든 SAA 영역에서 등장하는 핵심 서비스다.</span></p>
@@ -1046,13 +1046,13 @@ button, a, label { touch-action: manipulation; }
 <div class="related"><span>관련 용어</span><a class="chip" href="#term-05-01">S3</a></div>
 </article>
 <article class="term-card" data-term="s3 standard-ia" id="term-05-06">
-<div class="term-head"><span class="term-num">5.6</span><h3>S3 Standard-IA</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-05-06" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-05-06" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-05-06" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">5.6</span><h3>S3 Standard-IA (Infrequent Access)</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-05-06" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-05-06" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-05-06" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span>자주 접근하지 않지만 필요할 때 빠르게 접근해야 하는 데이터용 저장 등급.</span></p>
 <p><strong>활용 예시</strong><span>월 1회 이하로 보는 과거 리포트를 저장한다.</span></p>
 <p><strong>시험 포인트</strong><span>저장 비용은 낮지만 조회 비용이 발생한다.</span></p>
 </article>
 <article class="term-card" data-term="s3 one zone-ia" id="term-05-07">
-<div class="term-head"><span class="term-num">5.7</span><h3>S3 One Zone-IA</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-05-07" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-05-07" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-05-07" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">5.7</span><h3>S3 One Zone-IA (Infrequent Access)</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-05-07" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-05-07" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-05-07" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span>하나의 <a class="xref" href="#term-01-02" title="Availability Zone, AZ로 이동">AZ</a>에만 저장하는 저빈도 접근용 저장 등급.</span></p>
 <p><strong>활용 예시</strong><span>재생성 가능한 임시 데이터나 중요도가 낮은 파일에 사용한다.</span></p>
 <p><strong>시험 포인트</strong><span><a class="xref" href="#term-01-02" title="Availability Zone, AZ로 이동">AZ</a> 장애에 취약하므로 중요한 원본 데이터에는 부적합하다.</span></p>
@@ -1121,7 +1121,7 @@ button, a, label { touch-action: manipulation; }
 <div class="related"><span>관련 용어</span><a class="chip" href="#term-05-01">S3</a><a class="chip" href="#term-04-11">Lambda</a><a class="chip" href="#term-07-04">SQS</a><a class="chip" href="#term-07-08">SNS</a></div>
 </article>
 <article class="term-card important" data-important="true" data-term="ebs" id="term-05-17">
-<div class="term-head"><span class="term-num">5.17</span><h3>EBS</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-05-17" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-05-17" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-05-17" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">5.17</span><h3>Elastic Block Store, EBS</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-05-17" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-05-17" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-05-17" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span><a class="xref" href="#term-04-01" title="EC2로 이동">EC2</a>에 붙이는 블록 스토리지.</span></p>
 <div class="examples"><strong>활용 예시</strong><ol><li><span><a class="xref" href="#term-04-01" title="EC2로 이동">EC2</a> 인스턴스에 OS 디스크나 애플리케이션 데이터 디스크로 연결한다.</span></li><li><span>스냅샷으로 볼륨 백업을 만들고 다른 <a class="xref" href="#term-01-02" title="AZ로 이동">AZ</a>/리전에 복원할 수 있다.</span></li><li><span><a class="xref" href="#term-05-01" title="S3로 이동">S3</a>처럼 객체 저장소가 아니라 <a class="xref" href="#term-04-01" title="EC2로 이동">EC2</a>에 붙는 블록 스토리지다.</span></li></ol></div>
 <p><strong>시험 포인트</strong><span><a class="xref" href="#term-04-01" title="EC2로 이동">EC2</a>와 같은 <a class="xref" href="#term-01-02" title="Availability Zone, AZ로 이동">AZ</a>에 있어야 하며 <a class="xref" href="#term-05-18" title="EBS Snapshot로 이동">Snapshot</a>으로 백업한다.</span></p>
@@ -1135,7 +1135,7 @@ button, a, label { touch-action: manipulation; }
 <div class="related"><span>관련 용어</span><a class="chip" href="#term-05-17">EBS</a><a class="chip" href="#term-01-02">Availability Zone, AZ</a><a class="chip" href="#term-01-14">Disaster Recovery, DR</a></div>
 </article>
 <article class="term-card important" data-important="true" data-term="efs" id="term-05-19">
-<div class="term-head"><span class="term-num">5.19</span><h3>EFS</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-05-19" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-05-19" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-05-19" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">5.19</span><h3>Elastic File System, EFS</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-05-19" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-05-19" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-05-19" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span>여러 <a class="xref" href="#term-04-01" title="EC2로 이동">EC2</a>에서 동시에 마운트할 수 있는 관리형 파일 시스템.</span></p>
 <div class="examples"><strong>활용 예시</strong><ol><li><span>여러 <a class="xref" href="#term-04-01" title="EC2로 이동">EC2</a> 인스턴스가 같은 파일 시스템을 동시에 마운트해야 할 때 사용한다.</span></li><li><span>컨테이너 여러 개가 공유 파일을 읽고 써야 하는 Linux 워크로드에 적합하다.</span></li><li><span><a class="xref" href="#term-05-01" title="S3로 이동">S3</a>는 객체 저장소, EFS는 POSIX 파일 시스템이라는 차이를 구분한다.</span></li></ol></div>
 <p><strong>시험 포인트</strong><span>Linux 기반 공유 파일 시스템이며 다중 <a class="xref" href="#term-01-02" title="Availability Zone, AZ로 이동">AZ</a> 구성이 가능하다.</span></p>
@@ -1165,7 +1165,7 @@ button, a, label { touch-action: manipulation; }
 </section>
 <section class="category" id="sec-06"><h2>6. 데이터베이스/캐시</h2>
 <article class="term-card important" data-important="true" data-term="rds" id="term-06-01">
-<div class="term-head"><span class="term-num">6.1</span><h3>RDS</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-06-01" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-06-01" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-06-01" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">6.1</span><h3>Relational Database Service, RDS</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-06-01" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-06-01" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-06-01" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span>MySQL, PostgreSQL 같은 관계형 DB를 관리형으로 제공하는 서비스.</span></p>
 <div class="examples"><strong>활용 예시</strong><ol><li><span>MySQL/PostgreSQL 같은 관계형 DB를 관리형 서비스로 운영한다.</span></li><li><span>백업, 패치, 장애 조치 등 DB 운영 부담을 직접 설치형 DB보다 줄인다.</span></li><li><span>Multi-<a class="xref" href="#term-01-02" title="AZ로 이동">AZ</a>, <a class="xref" href="#term-06-05" title="Read Replica로 이동">Read Replica</a>, 암호화, 자동 백업 옵션이 시험에 자주 나온다.</span></li></ol></div>
 <p><strong>시험 포인트</strong><span><a class="xref" href="#term-06-04" title="RDS Multi-AZ로 이동">Multi-AZ</a>, <a class="xref" href="#term-06-05" title="Read Replica로 이동">Read Replica</a>, 백업, 스토리지 확장과 함께 나온다.</span></p>
@@ -1226,19 +1226,19 @@ button, a, label { touch-action: manipulation; }
 <p><strong>시험 포인트</strong><span>복합 키 설계와 쿼리 패턴이 함께 나온다.</span></p>
 </article>
 <article class="term-card" data-term="dynamodb gsi" id="term-06-10">
-<div class="term-head"><span class="term-num">6.10</span><h3>DynamoDB GSI</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-06-10" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-06-10" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-06-10" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">6.10</span><h3>DynamoDB GSI (Global Secondary Index)</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-06-10" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-06-10" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-06-10" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span>기본 키와 다른 방식으로 조회하기 위한 Global Secondary Index.</span></p>
 <p><strong>활용 예시</strong><span>email로 사용자를 찾고 싶을 때 GSI를 만든다.</span></p>
 <p><strong>시험 포인트</strong><span>추가 비용과 eventual consistency를 고려한다.</span></p>
 </article>
 <article class="term-card" data-term="dynamodb ttl" id="term-06-11">
-<div class="term-head"><span class="term-num">6.11</span><h3>DynamoDB TTL</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-06-11" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-06-11" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-06-11" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">6.11</span><h3>DynamoDB TTL (Time to Live)</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-06-11" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-06-11" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-06-11" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span>지정한 시간이 지난 항목을 자동으로 삭제하는 기능.</span></p>
 <p><strong>활용 예시</strong><span>만료된 세션이나 임시 토큰 데이터를 자동 삭제한다.</span></p>
 <p><strong>시험 포인트</strong><span>수명 제한 데이터에 적합하다.</span></p>
 </article>
 <article class="term-card important" data-important="true" data-term="dax" id="term-06-12">
-<div class="term-head"><span class="term-num">6.12</span><h3>DAX</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-06-12" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-06-12" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-06-12" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">6.12</span><h3>DynamoDB Accelerator, DAX</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-06-12" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-06-12" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-06-12" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span><a class="xref" href="#term-06-07" title="DynamoDB로 이동">DynamoDB</a> 전용 인메모리 캐시.</span></p>
 <div class="examples"><strong>활용 예시</strong><ol><li><span><a class="xref" href="#term-06-07" title="DynamoDB로 이동">DynamoDB</a> 읽기 지연 시간을 마이크로초 수준으로 낮추기 위해 캐시를 붙인다.</span></li><li><span>읽기 요청이 매우 많고 같은 데이터를 반복 조회하는 경우에 적합하다.</span></li><li><span>일반적인 <a class="xref" href="#term-06-01" title="RDS로 이동">RDS</a> 캐시는 <a class="xref" href="#term-06-13" title="ElastiCache로 이동">ElastiCache</a>, <a class="xref" href="#term-06-07" title="DynamoDB로 이동">DynamoDB</a> 전용 캐시는 DAX로 구분한다.</span></li></ol></div>
 <p><strong>시험 포인트</strong><span><a class="xref" href="#term-06-07" title="DynamoDB로 이동">DynamoDB</a> 앞단 캐시가 필요할 때 고려한다.</span></p>
@@ -1298,7 +1298,7 @@ button, a, label { touch-action: manipulation; }
 <p><strong>시험 포인트</strong><span>보호, 비용 통제, 안정성 문제와 연결된다.</span></p>
 </article>
 <article class="term-card important" data-important="true" data-term="sqs" id="term-07-04">
-<div class="term-head"><span class="term-num">7.4</span><h3>SQS</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-07-04" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-07-04" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-07-04" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">7.4</span><h3>Simple Queue Service, SQS</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-07-04" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-07-04" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-07-04" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span>메시지를 줄 세워 비동기로 처리하는 큐 서비스.</span></p>
 <div class="examples"><strong>활용 예시</strong><ol><li><span>이미지 분석 요청을 큐에 넣고 Worker가 순서대로 가져가 처리한다.</span></li><li><span>트래픽이 갑자기 몰려도 요청을 버리지 않고 뒤에서 천천히 처리한다.</span></li><li><span>서비스 간 직접 의존을 줄이는 Decoupling 문제에서 자주 정답이 된다.</span></li></ol></div>
 <p><strong>시험 포인트</strong><span>생산자와 소비자를 분리해 장애와 트래픽 급증을 흡수한다.</span></p>
@@ -1323,7 +1323,7 @@ button, a, label { touch-action: manipulation; }
 <p><strong>시험 포인트</strong><span>재시도 실패 처리와 운영 안정성 문제에 자주 나온다.</span></p>
 </article>
 <article class="term-card important" data-important="true" data-term="sns" id="term-07-08">
-<div class="term-head"><span class="term-num">7.8</span><h3>SNS</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-07-08" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-07-08" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-07-08" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">7.8</span><h3>Simple Notification Service, SNS</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-07-08" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-07-08" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-07-08" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span>하나의 메시지를 여러 구독자에게 발행하는 Pub/Sub 서비스.</span></p>
 <div class="examples"><strong>활용 예시</strong><ol><li><span>하나의 이벤트를 Email, <a class="xref" href="#term-04-11" title="Lambda로 이동">Lambda</a>, <a class="xref" href="#term-07-04" title="SQS로 이동">SQS</a> 등 여러 구독자에게 동시에 보낸다.</span></li><li><span>주문 완료 이벤트를 여러 시스템에 팬아웃해야 할 때 사용한다.</span></li><li><span>작업을 줄 세워 처리하는 <a class="xref" href="#term-07-04" title="SQS로 이동">SQS</a>와 달리 메시지를 발행/구독 방식으로 전파한다.</span></li></ol></div>
 <p><strong>시험 포인트</strong><span><a class="xref" href="#term-07-04" title="SQS로 이동">SQS</a>는 큐, SNS는 팬아웃 알림으로 구분한다.</span></p>
@@ -1430,7 +1430,7 @@ button, a, label { touch-action: manipulation; }
 <div class="related"><span>관련 용어</span><a class="chip" href="#term-08-08">CloudFormation</a></div>
 </article>
 <article class="term-card important" data-important="true" data-term="cdk" id="term-08-10">
-<div class="term-head"><span class="term-num">8.10</span><h3>CDK</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-08-10" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-08-10" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-08-10" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">8.10</span><h3>Cloud Development Kit, CDK</h3><span class="important-badge" title="SAA 핵심 용어">핵심</span><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-08-10" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-08-10" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-08-10" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span>프로그래밍 언어로 <a class="xref" href="#term-08-08" title="CloudFormation로 이동">CloudFormation</a> 인프라를 정의하는 도구.</span></p>
 <div class="examples"><strong>활용 예시</strong><ol><li><span>TypeScript나 Python 코드로 <a class="xref" href="#term-08-08" title="CloudFormation로 이동">CloudFormation</a> 템플릿을 생성한다.</span></li><li><span>개발자가 익숙한 언어로 재사용 가능한 인프라 구성을 만든다.</span></li><li><span>최종적으로는 <a class="xref" href="#term-08-08" title="CloudFormation로 이동">CloudFormation</a> <a class="xref" href="#term-08-09" title="Stack로 이동">Stack</a>을 배포한다는 점을 이해해야 한다.</span></li></ol></div>
 <p><strong>시험 포인트</strong><span>시험에서는 깊게 코딩하지 않지만 IaC 선택지로 볼 수 있다.</span></p>
@@ -1490,7 +1490,7 @@ button, a, label { touch-action: manipulation; }
 <div class="related"><span>관련 용어</span><a class="chip" href="#term-08-17">AWS Organizations</a></div>
 </article>
 <article class="term-card" data-term="aws ram" id="term-08-19">
-<div class="term-head"><span class="term-num">8.19</span><h3>AWS RAM</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-08-19" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-08-19" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-08-19" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">8.19</span><h3>AWS RAM (Resource Access Manager)</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-08-19" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-08-19" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-08-19" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span>Resource Access Manager. AWS 리소스를 다른 계정과 공유하는 서비스.</span></p>
 <p><strong>활용 예시</strong><span>여러 계정이 같은 <a class="xref" href="#term-03-16" title="Transit Gateway로 이동">Transit Gateway</a>나 서브넷을 공유한다.</span></p>
 <p><strong>시험 포인트</strong><span>멀티 계정 리소스 공유 문제에 나온다.</span></p>
@@ -1499,7 +1499,7 @@ button, a, label { touch-action: manipulation; }
 </section>
 <section class="category" id="sec-09"><h2>9. 마이그레이션/분석/기타 자주 보는 서비스</h2>
 <article class="term-card" data-term="dms" id="term-09-01">
-<div class="term-head"><span class="term-num">9.1</span><h3>DMS</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-09-01" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-09-01" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-09-01" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
+<div class="term-head"><span class="term-num">9.1</span><h3>Database Migration Service, DMS</h3><div class="term-actions"><label class="known-control"><input class="known-check" data-id="term-09-01" type="checkbox"/> <span>알고 있음</span></label><button class="copy-link" data-target="term-09-01" title="이 용어 링크 복사">링크</button><button class="prompt-link" data-target="term-09-01" title="이 용어로 ChatGPT 질문 프롬프트 복사">질문 복사</button></div></div>
 <p><strong>설명</strong><span>Database Migration Service. DB를 AWS로 이전하거나 DB 간 복제를 지원하는 서비스.</span></p>
 <p><strong>활용 예시</strong><span>온프레미스 MySQL을 <a class="xref" href="#term-06-01" title="RDS로 이동">RDS</a>로 마이그레이션한다.</span></p>
 <p><strong>시험 포인트</strong><span>동종/이종 DB 이전, CDC가 자주 나온다.</span></p>
