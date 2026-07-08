@@ -67,6 +67,7 @@ main { padding:48px min(6vw, 72px); max-width:1100px; width:100%; }
 .chip:hover { background:#e0edff; text-decoration:none; color:#1d4ed8; }
 .to-top { display:inline-block; margin-top:10px; color:#667085; font-size:12px; }
 .float-actions { position:fixed; right:18px; bottom:18px; display:flex; gap:8px; z-index:10; }
+.float-actions-left { right:auto; left:18px; }
 .float-actions button, .float-actions a { border:1px solid #cbd5e1; background:#fff; color:#334155; border-radius:999px; padding:10px 13px; box-shadow:var(--shadow); cursor:pointer; font-size:13px; }
 .float-actions button:hover, .float-actions a:hover { text-decoration:none; color:#1d4ed8; }
 .no-results { display:none; color:#94a3b8; font-size:13px; padding:8px; }
@@ -203,6 +204,9 @@ button, a, label { touch-action: manipulation; }
   .related { margin-top:15px; padding-top:14px; border-top:1px solid #eef1f6; gap:8px; }
   .related > span { flex:1 1 100%; margin:0 0 2px; font-size:11px; font-weight:800; letter-spacing:.03em; color:var(--muted); text-transform:uppercase; }
   .chip { padding:7px 13px; font-size:13px; background:#eff6ff; color:#1d4ed8; border-radius:999px; }
+
+  /* 뒤로 버튼: 왼쪽 하단 고정 */
+  .float-actions-left { left:12px; right:auto; }
 }
 </style>
 <meta content="#0f172a" name="theme-color"/><meta content="light" name="color-scheme"/><meta content="yes" name="apple-mobile-web-app-capable"/><meta content="AWS SAA" name="apple-mobile-web-app-title"/><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/><meta content="telephone=no" name="format-detection"/><link href="./manifest.webmanifest" rel="manifest"/><link href="./icon-192.png" rel="apple-touch-icon"/></head>
@@ -1569,8 +1573,10 @@ button, a, label { touch-action: manipulation; }
 </section>
 </main>
 </div>
-<div class="float-actions">
+<div class="float-actions float-actions-left">
 <button onclick="history.back()" type="button">← 뒤로</button>
+</div>
+<div class="float-actions">
 <a href="#top">↑ 맨 위</a>
 </div>
 <script>
